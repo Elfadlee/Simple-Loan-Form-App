@@ -1,0 +1,197 @@
+.MainPageLocal {
+  background-color: rgb(148, 151, 155);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MainBody {
+  background-color: rgb(53, 69, 96);
+  width: 70%;
+  height: 70%;
+  box-shadow: 0 20px 12px rgba(0, 0, 0, 0.15);
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Form {
+  width: 95%;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.selctMene {
+  width: 100%;
+}
+
+#BtnStyl {
+  width: 150px;
+  height: 50px;
+  margin-top: 40px;
+  color: white;
+  background-color: rgb(196, 56, 56);
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 20px 12px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.2s, transform 0.5s;
+  align-self: center;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  outline: none;
+  user-select: none;
+  touch-action: manipulation;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 50px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+#BtnStyl:hover {
+  background: #64060e;
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+#BtnStyl:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+  opacity: 0.7;
+}
+
+.MessageBox {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+
+  transition: all 0.3s ease;
+  z-index: 9999;
+  border: none;
+  border-radius: 10px;
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 200px;
+  box-shadow: 0 10px 10px rgba(236, 237, 240, 0.1);
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MessageBoxHeader {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  height: 20%;
+  background-color: blanchedalmond;
+  display: flex;
+  border: none;
+  border-radius: 10px 10px 0 0;
+}
+
+.MessageBoxHeader .close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  border: none;
+  background: transparent;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(53, 69, 96);
+}
+
+.MessageBoxBody {
+  font-size: 16px;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.MessageBoxFooter {
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.btnMsgBox {
+  width: 100px;
+  height: 30px;
+  color: white;
+  background-color: rgb(196, 56, 56);
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+  font-size: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  outline: none;
+  user-select: none;
+  touch-action: manipulation;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+.btnMsgBox:hover {
+  background: #64060e;
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+.MessageBox.error {
+  background-color: rgb(221, 120, 120);
+}
+.MessageBox.success {
+  background-color: rgb(74, 128, 62);
+}
+
+input ,select {
+
+  margin: 7px;
+  padding-left: 5px ;
+  margin: 5px;
+
+}
